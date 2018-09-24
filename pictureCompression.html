@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>图片压缩</title>
+	</head>
+
+	<body style="width: 100%;">
+		<div>
+			<span style="display: inline-block;width: 150px;">原始图片：</span>
+			<input type="file" id="imageFile" name="myfile" accept="image/x-png, image/jpg, image/jpeg, image/gif" />
+		</div>
+		<div>
+			<span style="display: inline-block;width: 150px;">宽度：</span>
+			<input type="text" id="width"  value="300,400,800" />
+		</div>
+		<div>
+			<input type="button" onclick="pictureProcessing()" value="图片处理并下载" />
+		</div>
+		<script>
+			/*
+			 * 图片处理
+			 */
+			var pictureProcessing = function() {
+				// js 获取文件对象
+				var imageFileObj = document.getElementById("imageFile").files[0];
+				var widthObject=document.getElementById("width").value;
+				var widthArray=widthObject.split(",");
+				var fileName=imageFileObj.name.substring(0,imageFileObj.name.indexOf("."));
+				var fileNameType=imageFileObj.name.substring(imageFileObj.name.indexOf("."),imageFileObj.name.length);
+				for(var i=0;i<widthArray.length;i++){
+					var widthValue=widthArray[i];
+					photoCompress(imageFileObj, {width: widthValue,quality:0.95}, function(base64,width) {
+						var blobFile = convertBase64UrlToBlob(base64);
+						funDownload(blobFile,fileName+"_"+width+fileNameType);
+					});
+				}
+			}
+			/*
+			 * 三个参数
+			 * file：一个是文件(类型是图片格式)，
+			 * config：一个是文件压缩的后宽度，宽度越小，字节越小
+			 * callback：一个是容器或者回调函数
+			 */
+			var photoCompress = function(file, config, callback) {
+				var ready = new FileReader();
+				/*开始读取指定的Blob对象或File对象中的内容. 
+				 * 当读取操作完成时,readyState属性的值会成为DONE,
+				 * 如果设置了onloadend事件处理程序,则调用之。
+				 * 同时,result属性中将包含一个data: 
+				 * URL格式的字符串以表示所读取文件的内容.*/
+				ready.readAsDataURL(file);
+				ready.onload = function() {
+					var thisResult = this.result;
+					canvasDataURL(thisResult, config,callback);
+				}
+			}
+
+			var canvasDataURL = function(path, config, callback) {
+				var img = new Image();
+				img.src = path;
+				img.onload = function() {
+					var that = this;
+					// 默认按比例压缩
+					var w = that.width,
+						h = that.height,
+						scale = w / h;
+					w = config.width || w;
+					h = config.height || (w / scale);
+					var quality = config.quality||0.7; // 默认图片质量为0.7
+					console.log(quality);
+					//生成canvas
+					var canvas = document.createElement('canvas');
+					var ctx = canvas.getContext('2d');
+					// 创建属性节点
+					var anw = document.createAttribute("width");
+					anw.nodeValue = w;
+					var anh = document.createAttribute("height");
+					anh.nodeValue = h;
+					canvas.setAttributeNode(anw);
+					canvas.setAttributeNode(anh);
+					ctx.drawImage(that, 0, 0, w, h);
+					// 图像质量
+					if(config.quality && config.quality <= 1 && config.quality > 0) {
+						quality = config.quality;
+					}
+					// quality值越小，所绘制出的图像越模糊
+					var base64 = canvas.toDataURL('image/jpeg', quality);
+					// 回调函数返回base64的值
+					callback(base64,config.width);
+				}
+			}
+			
+			/**
+			 * 将以base64的图片url数据转换为Blob
+			 */
+			var convertBase64UrlToBlob=function (urlData) {
+				var arr = urlData.split(','),
+					mime = arr[0].match(/:(.*?);/)[1],
+					bstr = atob(arr[1]),
+					n = bstr.length,
+					u8arr = new Uint8Array(n);
+				while(n--) {
+					u8arr[n] = bstr.charCodeAt(n);
+				}
+				return new Blob([u8arr], {
+					type: mime
+				});
+			}
+			
+			/*自动下载
+			 * blob：需要下载的blob对象；
+			 * filename：文件名
+			 */
+			function funDownload(blob, filename) {
+	    		// 创建隐藏的可下载链接
+	    		var eleLink = document.createElement('a');
+	    		eleLink.download = filename;
+	    		eleLink.style.display = 'none';
+	    		eleLink.href = URL.createObjectURL(blob);
+	    		// 触发点击
+	    		document.body.appendChild(eleLink);
+	    		eleLink.click();
+	    		// 然后移除
+	    		document.body.removeChild(eleLink);
+			};
+		</script>
+	</body>
+
+</html>
