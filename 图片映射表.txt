@@ -1,4 +1,4 @@
-{
+﻿{
 	"img/screen/x/1-2_400.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/35cde14ffd68406eba8d4a7d2fb8e559.jpg",
 	"img/cable/typeC/2_300.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/a829925049564e33923e48e548f5c01c.jpg",
 	"img/screen/8可用/2-2_400.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/04a591377b20470abc6e9655f1ae5bab.jpg",
@@ -176,5 +176,6 @@
 	"img/screen/8可用/1_300.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/d7f6c4789a8f4385a732031c63d01140.jpg",
 	"img/screen/8/IPHON78_3_1500.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/134ba084a586450aa6aeb54b9d1b2dfe.jpg",
 	"img/cable/micro/4_300.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/d792506b94c7418f86a8c75699ba6f4e.jpg",
-	"img/cable/typeC/6_300.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/6906b05ae7a0482c86b7e70868d291c7.jpg}"
+	"img/cable/typeC/6_300.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/6906b05ae7a0482c86b7e70868d291c7.jpg",
+	"img/wiselink_3.png":"http://39.108.213.55:82/uploads/2018/9/30/1/5ac69f59293d40ada7b89f4c4d0df006.png"
 }

@@ -28,7 +28,7 @@
     <!--给网页标题前添加一个小图标favicon.ico-->
     <link rel="shortcut icon" type="image/x-icon" href="http://39.108.213.55:82/uploads/2018/9/29/1/6e3c7b1057b144c981179ef26d41f0ea.png">
     <!--加页面权重,利于排名-->
-    <link rel="canonical" href="https://liganming.com/"/>
+    <link rel="canonical" href="http://wise-link.cn//"/>
     <!--<script src="//cdn.shopify.com/s/files/1/0725/0919/t/9/assets/app.js?14489809768715833328" type="text/javascript"></script>-->
     <script src="../assets/app.js" type="text/javascript"></script>
     <!--[if lte IE 8]>
@@ -154,10 +154,34 @@
 <body class="index feature_image" style="background-color: white;">
 <div id="content_wrapper">
     <div id="shopify-section-header" class="shopify-section header-section">
-        <div id="header" class="mm-fixed-top Fixed mobile-header mobile-sticky-header--true">
+        <script>
+        	window.onload=function(){
+        		var scrollWidth=document.body.scrollWidth;
+        		var width=window.screen.width;
+        		if(scrollWidth>width){
+        			var collection_mobile_nav=document.getElementById("collection_mobile_nav");
+        			if(collection_mobile_nav){
+        				var setWidth="width:"+(width/2)+"px !important";
+        				collection_mobile_nav.style.width = (width/2)+"px";
+        				collection_mobile_nav.setAttribute('style', setWidth);
+        				console.log("设置的宽度："+setWidth);
+        			}
+        			var header=document.getElementById("header");
+        			if(header){
+        				var setWidth="width:"+width+"px !important";
+        				header.style.width = (width/2)+"px";
+        				header.setAttribute('style', setWidth);
+        				console.log("设置的宽度："+setWidth);
+        			}
+        		}
+        		
+        	}
+        </script>
+				<div id="header" class="mm-fixed-top Fixed mobile-header mobile-sticky-header--true">
             <a href="#nav" class="icon-menu" aria-haspopup="true" aria-label="Menu"><span>Menu</span></a>
-            <a href="https://liganming.com" title="Wiselink" class="mobile_logo logo">
-                <img src="http://39.108.213.55:82/uploads/2018/9/29/1/9cb5f465e54e4e779159ddca38a8dec4.png" alt="Wiselink"/>
+            <a href="/" title="Wiselink" class="mobile_logo logo" id="collection_mobile_nav">
+                <!-- <img src="http://39.108.213.55:82/uploads/2018/9/29/1/9cb5f465e54e4e779159ddca38a8dec4.png" alt="Wiselink"/> -->
+                <img src="http://39.108.213.55:82/uploads/2018/9/30/1/5ac69f59293d40ada7b89f4c4d0df006.png" alt="Wiselink"/>
             </a>
 
         </div>
@@ -189,7 +213,7 @@
                                 <a href="javacript:void(0);">Cable</a>
                                 <ul>
                                     <li>
-                                        <a href="/collection/miscro-usb-cable">Micro USB Cable</a>
+                                        <a href="/collection/miscro-usb-cable.html">Micro USB Cable</a>
                                     </li>
                                     <li>
                                         <a href="/collection/usb-type-c-cable.html">USB Type C Cable</a>
@@ -214,8 +238,9 @@
         <div class="header header-background--false" style="width: 100%;">
             <div class="container">
                 <div class="three columns logo ">
-                    <a href="https://liganming.com" title="Wiselink">
+                    <a href="/" title="Wiselink">
                         <img src="http://39.108.213.55:82/uploads/2018/9/29/1/9cb5f465e54e4e779159ddca38a8dec4.png" alt="Wiselink"/>
+                        <!-- <img src="http://39.108.213.55:82/uploads/2018/9/30/1/5ac69f59293d40ada7b89f4c4d0df006.png" alt="Wiselink"/> -->
                     </a>
                 </div>
                 <div class="thirteen columns nav mobile_hidden">
@@ -330,82 +355,91 @@
     <div class="nine columns alpha pc_header-show pc_header-hidden">
         <div class="flexslider product_gallery product-4886391044-gallery product_slider">
             <ul class="slides">
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/03d3ec5d258e49849e268a5596b1daf1.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/d5566f05c64543589ad3769d78764aca.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/73eedadf79bd4c29a32d685b19fa64b0.jpg" alt="Lightning Cable"
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/d7f6c4789a8f4385a732031c63d01140.jpg" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/8c6df6920c614fba938ed3a37c495dd8.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/8c6df6920c614fba938ed3a37c495dd8.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/8c6df6920c614fba938ed3a37c495dd8.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/98dc37f13d544818bf5dc4fb6c4d422b.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/98dc37f13d544818bf5dc4fb6c4d422b.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/98dc37f13d544818bf5dc4fb6c4d422b.jpg"/>
                         </div>
                     </a>
                 </li>
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/58788bd045ff48019cb6ecf8a9652483.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/1c5fe7d2c69d48eca85c15a5271dbf1f.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/bd63be0148d148379b707a2a099f81d6.jpg" alt="Lightning Cable"
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/b65bc479151a4c7e9fc501104fcb2a88.jpg" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/43c1ac3f0bbe49da8cd35aed61b63b7f.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/43c1ac3f0bbe49da8cd35aed61b63b7f.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/43c1ac3f0bbe49da8cd35aed61b63b7f.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/a20a950d32d44f0ba6b1af2f9457fe62.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/a20a950d32d44f0ba6b1af2f9457fe62.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/a20a950d32d44f0ba6b1af2f9457fe62.jpg"/>
                         </div>
                     </a>
                 </li>
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/4588fcf5595949d6920f5b3bbb06d9ec.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/7c32628c4e994b23995c673599195fcc.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/f747552b5a8b4fd2a17cd7a8fe2473ab.jpg" alt="Lightning Cable"
+                            <img src="../img/screen/8可用/1-3_300.png" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/d7fe41575aa64b3ead276b01a8f1bc3b.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/d7fe41575aa64b3ead276b01a8f1bc3b.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/d7fe41575aa64b3ead276b01a8f1bc3b.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/cd1284a8fbf14b198883ff3afbb4c668.png', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/cd1284a8fbf14b198883ff3afbb4c668.png 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/cd1284a8fbf14b198883ff3afbb4c668.png"/>
                         </div>
                     </a>
                 </li>
-                
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/9a1ce219faf24bc9bdd2ce1ce7686447.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/be58579be8024ce680703a4a4511c5e8.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/d792506b94c7418f86a8c75699ba6f4e.jpg" alt="Lightning Cable"
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/fefd7a0aceb64f3bb65b0294d90ab7b3.jpg" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/6f9059726c054a318ce8d332e68f35c6.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/6f9059726c054a318ce8d332e68f35c6.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/6f9059726c054a318ce8d332e68f35c6.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/3a6d0a7d95184db4bae920a52b4c9d2f.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/3a6d0a7d95184db4bae920a52b4c9d2f.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/3a6d0a7d95184db4bae920a52b4c9d2f.jpg"/>
                         </div>
                     </a>
                 </li>
-                
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/fcf20232e837490ea1dea1d4166fd28c.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/b6fd4165e0fc4420a927081314fccf51.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/ceda8040ae77404eab301ede3ad78b4c.jpg" alt="Lightning Cable"
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/f185e4ca9606469fbb52790d82e60373.jpg" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/135f730605704cff9443d36e8be1cf66.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/135f730605704cff9443d36e8be1cf66.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/135f730605704cff9443d36e8be1cf66.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/123881162f1d4c5bb0a0989419dfef29.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/123881162f1d4c5bb0a0989419dfef29.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/123881162f1d4c5bb0a0989419dfef29.jpg"/>
                         </div>
                     </a>
                 </li>
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/95446f34fd0b47b88bbf23ba9334c15d.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/01d54fd9a4584082965675d168bcdbb9.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/ae350052fdf04cbb805d893c3935e5e5.jpg" alt="Lightning Cable"
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/043133679d6f436faf44a1a9aec9e5e7.jpg" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/51a7ec64292b4d7299ba75e058e7358f.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/51a7ec64292b4d7299ba75e058e7358f.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/51a7ec64292b4d7299ba75e058e7358f.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/e6b3a257564b4c398d0a31b05fc1f717.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/e6b3a257564b4c398d0a31b05fc1f717.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/e6b3a257564b4c398d0a31b05fc1f717.jpg"/>
                         </div>
                     </a>
                 </li>
-                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/323c56e7af7040ccad8d82c653ce9b99.jpg" data-title="#">
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/d89236662d484785910ef02a4b279138.jpg" data-title="#">
                     <a href="#" class="fancybox" title="Lightning Cable">
                         <div class="image__container" style="max-width: 1500px">
-                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/2d2799390a554ef791e0a9c6dd0f4cfa.jpg" alt="Lightning Cable"
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/9dbe4f3ee8b44a5f98ce21e338c5a7ee.jpg" alt="Lightning Cable"
                                  class="lazyload lazyload--fade-in cloudzoom featured_image"
-                                 data-cloudzoom="zoomImage:http://39.108.213.55:82/uploads/2018/9/29/1/69b0c97fbd624887b6b87931ce50e3b9.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
-                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/69b0c97fbd624887b6b87931ce50e3b9.jpg 2048w"
-                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/69b0c97fbd624887b6b87931ce50e3b9.jpg"/>
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/5f490e3136d24e9a826f2708493b5537.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/5f490e3136d24e9a826f2708493b5537.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/5f490e3136d24e9a826f2708493b5537.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li data-thumb="http://39.108.213.55:82/uploads/2018/9/29/1/4bd02dcd1c934d9192d711f832ebd796.jpg" data-title="#">
+                    <a href="#" class="fancybox" title="Lightning Cable">
+                        <div class="image__container" style="max-width: 1500px">
+                            <img src="http://39.108.213.55:82/uploads/2018/9/29/1/8e6524d6382c40c0a24801b096934dc4.jpg" alt="Lightning Cable"
+                                 class="lazyload lazyload--fade-in cloudzoom featured_image"
+                                 data-cloudzoom="zoomImage: 'http://39.108.213.55:82/uploads/2018/9/29/1/b3e16629ccb14fe98c64f193c39e01a3.jpg', tintColor: '#ffffff', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250, lazyLoadZoom: true"
+                                 data-sizes="auto" data-srcset="http://39.108.213.55:82/uploads/2018/9/29/1/b3e16629ccb14fe98c64f193c39e01a3.jpg 2048w"
+                                 data-src="http://39.108.213.55:82/uploads/2018/9/29/1/b3e16629ccb14fe98c64f193c39e01a3.jpg"/>
                         </div>
                     </a>
                 </li>
@@ -418,46 +452,47 @@
     </div>-->
     <!--商品介绍-->
     <div class="pc_product_detail">
-        <p class="product-name">Micro USB Cable Android Charger - [2-Pack, 3.3ft] Wiselink Nylon Braided Fast Sync and Charging Cord for Samsung, Kindle, Nexus, LG, HTC, Nokia, Sony, Xbox, PS4, Smartphones & More - Black</p>
+        <p class="product-name">iPhone 8/7/6s/6 Screen Protector [3-Pack] [4.7 inches] - Wiselink HD 9H Hardness Tempered Glass Screen Protector Compatible with Apple iPhone 8/7/6s/6</p>
         <p><span>Price：</span><span style="color: red;">$8.99</span></p>
-        <ul style="color: #949494;">
-            <li style="color: #111;font-size: 13px;line-height: 19px;">Fast Sync & Charge - Wiselink micro USB cable is built with solid 22AWG wires, which ensures safe and high speed charging up to 2.4 A and data transfer up to 480Mbps via USB 2.0.</li>
-            <li style="color: #111;font-size: 13px;line-height: 19px;">Premium Quality - Ultra-durable nylon braided jacket makes Wiselink micro USB cable more flexible and tangle-free. The premium aluminum connectors with high hardness prevent splitting. The stainless connector head won’t get loose or fall out of your device, and fit almost all cases.</li>
-            <li style="color: #111;font-size: 13px;line-height: 19px;">Unparalleled Durability - Reinforced by toughened fiber core and multi-layer shielding, Wiselink micro USB cable can withstand at least 10000 cycles of 90 degree bend test, ensuring the cable still works great after long-term heavy use.</li>
-            <li style="color: #111;font-size: 13px;line-height: 19px;">Perfect Compatibility - Wiselink micro USB cable is compatible with Samsung Galaxy S7/S7+/S6/S6+ Edge/J7/Note 5, Kindle, HTC, Motorola, Nexus, Nokia, LG, Huawei, Xiaomi, Sony, Blackberry, Xbox, PS4, MP3, most Android smartphones, tablets, Windows phones, and other devices with a micro USB port.</li>
-            <li style="color: #111;font-size: 13px;line-height: 19px;">Premium Customer Support - Wiselink provides friendly and premium warranty support. Please contact us with any question. The fast and efficient customer service will solve your problems within 24 hours.</li>
+        <ul>
+            <li style="color: #111;font-size: 13px;line-height: 19px;">Scratch & Shatter Resistance - Wiselink tempered glass screen protector compatible with iPhone 8 / 7 / 6s / 6 features 9H hardness technology which ensures the tempered glass against scratches, scrapes and shatters.
+            </li>
+            <li style="color: #111;font-size: 13px;line-height: 19px;">Anti-fingerprint & Bubble-Free - The hydrophobic and oleophobic coating can resist sweat and oil, so fingerprints won’t stay on the surface of the iPhone 8 / 7 / 6s / 6 screen protector over long-term use. Easy installation without air bubbles and dust, and the accurate touch keeps the screen highly responsive.
+            </li>
+            <li style="color: #111;font-size: 13px;line-height: 19px;">Ultra-clear - With 99.99% transparency, Wiselink iPhone 8 / 7 / 6s / 6 tempered glass screen protector provides true high-definition viewing on the device compared to other protectors. 
+            </li>
+            <li style="color: #111;font-size: 13px;line-height: 19px;">Case-friendly Design - Wiselink iPhone 8 / 7 / 6s / 6 screen protector is designed to be compatible with almost all cases due to the 2.5D curved edge to edge space.
+            </li>
+            <li style="color: #111;font-size: 13px;line-height: 19px;">Premium Customer Support - Wiselink provides friendly and premium warranty support. Please contact us with any question. The fast and efficient customer service will solve your problems within 24 hours.
+            </li>
         </ul>
         <button onclick="buy()" style="width: 100%;">buy on amazon</button>
     </div>
     <script>
     	var buy=function(){
-    		window.open("https://www.amazon.com/Micro-USB-Cable-Android-Charger/dp/B07CM5GHSH/ref=sr_1_4?m=A2UALUJNVDKLEP&s=merchant-items&ie=UTF8&qid=1537757183&sr=1-4");
+    		window.open("https://www.amazon.com/iPhone-Screen-Protector-3-Pack-inches/dp/B07DLQHSX4/ref=sr_1_1?m=A2UALUJNVDKLEP&s=merchant-items&ie=UTF8&qid=1537757183&sr=1-1");
     	}
     </script>
     <!--商品详情-->
     <div style="color: #C60;font-weight: 700;font-size: 25px;padding-top: 50px;padding-bottom: 20px;position: relative;clear: both;">Product Description</div>
     <div class="product-detail">
-        <img style="width: 100%;" src="http://39.108.213.55:82/uploads/2018/9/29/1/e866a9a66f99405d8b5edae17a59d980.jpg">
-        <img style="width: 100%;" src="http://39.108.213.55:82/uploads/2018/9/29/1/6693221284a8458493c4bad21978091e.jpg">
-        <img style="width: 100%;" src="http://39.108.213.55:82/uploads/2018/9/29/1/a5c006ec27bf4d908da44ba2a811525f.jpg">
-
-		<p class="font-bold">Wiselink Micro USB Cable Android Charger - Faster charge and sync cable makes your life more convenient</p>
-		<p class="font-bold">High Speed Charge & Sync</p>
-		<p>Wiselink micro USB cable is built to provide safer and faster charging up to 2.4 A and data transfer up to 480Mbps.</p>
-		<p class="font-bold">Built to Last</p>
-		<p>Provided by toughened fiber core, nylon braided and multi-layer shielding, Wiselink micro USB cable is built to withstand any yanking, twisting, stretching or dropping that it might be subjected to.</p>
-		<p class="font-bold">Incredible Durability</p>
-		<p>Designed and built with only premium materials, Wiselink micro USB cable can withstand at least 10000 cycles of 90 degree bend test, which is one of the most durable cables on the market.</p>
-		<p class="font-bold">Universal Compatibility</p>
-		<p>Wiselink micro USB cable works with Android and Windows Phones, tablets and more devices with a micro USB port.</p>
-		<p>- Samsung/Nexus/HTC/Motorola/Nokia/LG/Sony/Blackberry/Xiaomi/Honor/Oppo/Sprint</p>
-		<p>- Samsung Galaxy J7/s7 edge /s6 edge/note 5</p>
-		<p>- PS4/Xbox/PS Vita/E-readers/Printers</p>
-		<p>- Power banks/Hard drives</p>
-		<p>- Wireless keyboards/Cameras/Camcorders/GoPro</p>
-		<p>- GPS devices/Portable chargers/Bluetooth speakers/MP3 players</p>
-		<p>- Other Micro USB devices</p>
-        
+        <img style="width: 100%;" src="http://39.108.213.55:82/uploads/2018/9/29/1/fd1a4ef0bce7443e825464555dfb6a5a.jpg">
+        <img style="width: 100%;" src="http://39.108.213.55:82/uploads/2018/9/29/1/a8544db7aa3845a8a047f90f436ec707.jpg">
+        <img style="width: 100%;" src="http://39.108.213.55:82/uploads/2018/9/29/1/9dcce24c0bb447dc8af45bd76719d5b7.jpg">
+        <p class="font-bold">Wiselink tempered glass screen protector compatible with iPhone 8 / 7 / 6s / 6 - Maximize the protection of your iPhone 8 / 7 / 6s / 6 screen</p>
+        <p>Wiselink adopts the world-advanced screen protection technology for the iPhone 8 / 7 / 6s / 6 tempered glass screen protector.</p>
+        <p class="font-bold">5X stronger</p>
+        <p>The strong 9H (hardness level) tempered glass provides your cell phone with the best protection against scratches, scrapes and shatters.</p>
+        <p class="font-bold">Works perfectly with 3D Touch</p>
+        <p>Wiselink iPhone 8 / 7 / 6s / 6 screen protector measures a mere 0.33mm thick, which makes it ultra-thin and ultra-light without limiting the touch responsiveness of the iPhone 8 / 7 / 6s / 6’s screen and 3D Touch.</p>
+        <p class="font-bold">Ultra high definition</p>
+        <p>Wiselink iPhone 8 / 7 / 6s / 6 screen protector is designed to be 99.99% transparency to promote an optimal, natural and crystal clear viewing experience. The hydrophobic and oleophobic coating can resist sweat and oil so that the fingerprints won’t stay on the screen surface over long-term use.</p>
+        <p><span class="font-bold">Note:</span> Due to the curved edges of iPhone 8 / 7 / 6s / 6, Wiselink tempered glass screen protector is designed to be a little smaller than the device’s entire screen, which can avoid bubbling and peeling up around the edges, and ensure full compatibility with all iPhone cases.</p>
+        <p class="font-bold">Package contains</p>
+        <p>3-pack Wiselink tempered glass screen protectors</p>
+        <p>3 wet and dry wipes</p>
+        <p>3 dust removal stickers</p>
+        <p>1 microfiber cloth</p>
     </div>
 
 </div>
