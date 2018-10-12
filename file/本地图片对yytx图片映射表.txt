@@ -1,4 +1,4 @@
-﻿{
+{
 	"img/screen/x/1-2_400.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/35cde14ffd68406eba8d4a7d2fb8e559.jpg",
 	"img/cable/typeC/2_300.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/a829925049564e33923e48e548f5c01c.jpg",
 	"img/screen/8可用/2-2_400.jpg": "http://39.108.213.55:82/uploads/2018/9/29/1/04a591377b20470abc6e9655f1ae5bab.jpg",
