@@ -812,7 +812,7 @@ input[type="submit"].guest_button:hover {
 }
 
 .nav ul.menu ul {
-    width: 250px;
+    width: 320px;
     float: left;
     display: inline
 }
@@ -6121,7 +6121,7 @@ html.mm-opening .mm-menu.mm-offcanvas.mm-front,html.mm-opening .mm-menu.mm-offca
     font-family: Raleway;
     font-weight: bold;
     font-size: 12px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 2px;
     color: inherit
 }
