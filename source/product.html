@@ -168,7 +168,9 @@
 				</div>
 
 				<!-- PC版本菜单栏 -->
-				<div class="header header-background--false" style="width: 100%;">
+				<!-- <div class="header header-background--false" style="width: 100%;"> -->
+					<div class="header header-background--false header-transparency--true sticky-header--true mm-fixed-top is-absolute  fadeIn"
+             data-dropdown-position="below_parent">
 					<div class="container">
 						<div class="three columns logo ">
 							<a href="/" title="Wiselink">
@@ -280,10 +282,18 @@
 
 
 		<!-----------------------------------------自定义部分 start------------------------------------------------------------------------------>
-		<div style="float: left;width: 100%;">
+		<div style="float: left;width: 100%;" id="iframeDiv">
 			<iframe src="" width="100%" height='100%' frameborder="0"  id="web" scrolling="no" name="web" height="2600px"></iframe>
 		</div>
 		<script>
+				if ($(window).width() > 798) {
+					var iframeDiv = document.getElementById("iframeDiv");
+					//iframeDiv.css('padding-top', $('.header').height());
+					var headerHeight=$('.header').height();
+					console.log(headerHeight);
+					iframeDiv.style.marginTop=headerHeight+"px";
+					console.log(iframeDiv);
+				}
 				//设置内嵌页面
 				var iframe = document.getElementById("web");
 				var url=location.search; 
